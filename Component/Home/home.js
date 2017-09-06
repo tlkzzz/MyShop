@@ -18,8 +18,6 @@ import {
 
 
 const {width,height} = Dimensions.get('window');
-import Icon from 'react-native-vector-icons/Ionicons';
-
 
 import Sss from './swiper';
 import Flaw from './flaw';

@@ -51,7 +51,34 @@ export default class Goods extends Component {
                 </ScrollView>
 
 
+            <View style={styles.footstyle}>
+                <View style={styles.footleftstyle}>
+                    <View style={styles.v1s}>
+                        <Icon name="ios-star-outline" size={18}/>
+                        <Text style={styles.tsstyle}>收藏</Text>
 
+                    </View>
+                    <View style={styles.v1s}>
+                        <Icon name="ios-chatbubbles-outline" size={18}/>
+                        <Text style={styles.tsstyle}>客服</Text>
+                    </View>
+                    <View style={styles.v1s}>
+                        <Icon name="ios-basket-outline" size={18}/>
+                        <Text style={styles.tsstyle}>购物车</Text>
+
+                    </View>
+
+
+                </View>
+
+
+
+
+
+                <View style={styles.footsbuttenstyle}>
+                    <Text style={styles.footstextstyle}>加入购物车</Text>
+                </View>
+            </View>
 
             </View>
         );
@@ -65,5 +92,46 @@ const styles = StyleSheet.create({
         // alignItems: 'center',
         backgroundColor: '#F6F4F5',
     },
+    footstyle : {
+        position:'absolute', //局对定位
+        bottom :0,  //底部
+        width:width,
+        height:40,
+        backgroundColor:'#FFFFFF',
+        flexDirection:'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    footleftstyle : {
+        width:width/2,
+        height:40,
+        flexDirection:'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+
+    },
+    footsbuttenstyle : {
+        width:width/2,
+        height:40,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor:'#FB8C2D',
+    },
+    footstextstyle : {
+        fontSize:15,
+        color:'#FFFFFF'
+    },
+    v1s :{
+        width:width/2*(1/3)+1,
+        height:40,
+        borderRightWidth:0.5,
+        borderColor:'#B9B9B9',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    tsstyle : {
+        fontSize:10,
+        color:'#B9B9B9',
+    }
 });
 
